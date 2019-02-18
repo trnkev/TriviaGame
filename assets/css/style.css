@@ -1,0 +1,9 @@
+body {
+    background-image: url(../images/bananas.png);
+}
+
+.jumbotron {
+    background:  #ffffcc;
+    overflow: scroll;
+    border-radius: 0;
+}

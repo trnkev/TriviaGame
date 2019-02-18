@@ -1,22 +1,177 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Trivia Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
-    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-  </head>
-  <body>
-      <header>
-          <h1>Totally Trivial Trivia</h1>
-      </header>
+        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 
-    <!-- Script -->
-    <script type="text/javascript" src="app.js"></script>
+<body>
+    <div class="container">
+        <div class='jumbotron'>
+            <h1>Totally Trivial Trivia</h1>
+            <hr>
 
-  </body>
+            <p>What is the largest night in the world?</p>
+            <div id='largest-night-club'>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="exchange-la">
+                    <label class="form-check-label" for="inlineRadio1">Exchange LA</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="marquee">
+                    <label class="form-check-label" for="inlineRadio2">Marquee Las Vegas</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="privilege">
+                    <label class="form-check-label" for="inlineRadio3">Privelege</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                        value="the-warehouse-project">
+                    <label class="form-check-label" for="inlineRadio4">The Warehouse Project</label>
+                </div>
+            </div>
+            <br>
+
+            <p>Who is the highest paid DJ of 2018?</p>
+            <div id='highest-paid-DJ'>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="calvin-harris">
+                    <label class="form-check-label" for="inlineRadio1">Calvin Harris</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="tiesto">
+                    <label class="form-check-label" for="inlineRadio2">Tiesto</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="david-guetta">
+                    <label class="form-check-label" for="inlineRadio3">David Guetta</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="the-chainsmokers">
+                    <label class="form-check-label" for="inlineRadio3">The Chainsmokers</label>
+                </div>
+            </div>
+            <br>
+
+            <p>Which artist worked with Zedd to create the song "Stay"?</p>
+            <div id='highest-paid-DJ'>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="alessia-cara">
+                    <label class="form-check-label" for="inlineRadio1">Alessia Cara</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="selena-gomez">
+                    <label class="form-check-label" for="inlineRadio2">Selena Gomez</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="katy-perry">
+                    <label class="form-check-label" for="inlineRadio3">Katy Perry</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="hayley-william">
+                    <label class="form-check-label" for="inlineRadio3">Hayley Williams</label>
+                </div>
+            </div>
+            <br>
+
+            <p>What is the biggest music festival in the world?</p>
+            <div id='biggest-music-festival'>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="donauinselfest">
+                    <label class="form-check-label" for="inlineRadio1">Donauinselfest</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="glastonbury">
+                    <label class="form-check-label" for="inlineRadio2">Glastonbury</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="coachella">
+                    <label class="form-check-label" for="inlineRadio3">Coachella</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="lollapalooza">
+                    <label class="form-check-label" for="inlineRadio3">Lollapalooza</label>
+                </div>
+            </div>
+            <br>
+
+            <p>Which EDM DJ is known for their mouse helmet?</p>
+            <div id='biggest-music-festival'>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="deadmau5">
+                    <label class="form-check-label" for="inlineRadio1">Deadmau5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="marshmello">
+                    <label class="form-check-label" for="inlineRadio2">Marshmello</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="daft-punk">
+                    <label class="form-check-label" for="inlineRadio3">Daft Punk</label>
+                </div>
+            </div>
+            <br>
+
+            <p>Which DJ is known for dubstep?</p>
+            <div id='biggest-music-festival'>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="donauinselfest">
+                    <label class="form-check-label" for="inlineRadio1">Donauinselfest</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="glastonbury">
+                    <label class="form-check-label" for="inlineRadio2">Glastonbury</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="coachella">
+                    <label class="form-check-label" for="inlineRadio3">Coachella</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="lollapalooza">
+                    <label class="form-check-label" for="inlineRadio3">Lollapalooza</label>
+                </div>
+            </div>
+            <br>
+
+
+
+        </div>
+
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Script -->
+        <script type="text/javascript" src="app.js"></script>
+
+</body>
 
 </html>
